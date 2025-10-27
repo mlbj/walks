@@ -1,0 +1,16 @@
+\documentclass[tikz, margin = 0.1cm]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1, rotate=-90]
+    % \foreach \x in {0,...,7}{
+    %     \foreach \y in {0,...,7}{
+    %         \fill[gray!80] (\x,\y) circle (0.05);
+    %     }
+    % }
+
+    \draw[blue, line width=3.6pt] 
+        plot[mark=*, 
+             mark size=2pt,
+             mark options={color=black},
+        ] file {pyramid_path.txt};
+\end{tikzpicture}
+\end{document}
